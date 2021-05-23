@@ -486,6 +486,11 @@ button:hover {
     background-image: url(../images/fourth-main-icon.png);
 }
 
+section.about-me .section-heading a {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
 
 /* My Work */
 
