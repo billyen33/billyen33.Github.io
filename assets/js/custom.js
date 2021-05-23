@@ -48,6 +48,7 @@
     $(this).removeClass("hover");
   });
 //
+  $(window).load(function(){
   $(".isotope-wrapper").each(function() {
     var $isotope = $(".isotope-box", this);
     var $filterCheckboxes = $('input[type="radio"]', this);
@@ -67,7 +68,7 @@
 
     $(this).on("change", filter);
     filter();
-  });
+  })});
 
   lightbox.option({
     resizeDuration: 200,
