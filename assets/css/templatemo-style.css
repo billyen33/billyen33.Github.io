@@ -661,14 +661,14 @@ section.awards span3 li {
     padding: 10px 0 0 0;
 }
 
-section.awards span3 div0{
-    text-align: right;
-    font-size: 11px;
+section.awards span3 p{
+    margin-left: 3em;
+    font-size: 15px;
 }
 
 section.awards span3 div {
     margin-left: 3em;
-    font-size: 10px;
+    font-size: 15px;
     font-style: italic;
 }
 
