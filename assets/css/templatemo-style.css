@@ -455,7 +455,7 @@ button:hover {
     
 }
 
-.employer {
+.employer a {
     font-size:20px;
     color: #3fa44c;
     font-weight: bold;
