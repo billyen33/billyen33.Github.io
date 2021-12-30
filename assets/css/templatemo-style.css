@@ -409,6 +409,64 @@ button:hover {
     margin-top: 30px;
 }
 
+/* Experiences Image */
+.exp-image-post {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px solid rgba(250, 250, 250, 0.1);
+}
+
+
+.exp-image img{
+    border-radius: 25px;
+    width: 175px;
+    height: 175px;
+}
+
+.first-column {
+    width: 25%;
+    padding: 10px 10px 10px 10px;
+    padding-right: 50px;
+    float: left;
+}
+
+.second-column {
+    width: 75%;
+    padding: 10px;
+    text-align: left;
+    float: right;
+}
+/* Responsive Design */
+@media screen and (max-width: 1450px) {
+
+   .first-column {
+        width: 100%;
+        padding-bottom: 10px;
+        float: none;
+    }
+
+    .second-column {
+        width: 100%;
+        padding-bottom: 10px;
+        float: none;
+    }
+    
+}
+
+.employer {
+    font-size:20px;
+    color: #3fa44c;
+    font-weight: bold;
+    text-align: left;
+}
+
+.job-title {
+    font-size:17px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding-bottom: 15px;
+    text-align: left;
+}
 
 /* Services */
 
