@@ -418,6 +418,9 @@ button:hover {
 
 
 .exp-image img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 25px;
     width: 175px;
     height: 175px;
@@ -425,8 +428,7 @@ button:hover {
 
 .first-column {
     width: 25%;
-    padding: 10px 10px 10px 10px;
-    padding-right: 50px;
+    padding: 10px;
     float: left;
 }
 
