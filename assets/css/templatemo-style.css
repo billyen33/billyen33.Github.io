@@ -183,7 +183,7 @@ html {
     line-height: 10px;
     background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
-    font-size: 15px;
+    font-size: 18px;
     transition: all 0.5s;
 }
 
@@ -316,6 +316,10 @@ html {
     font-size: 32px;
     font-weight: 700;
     color: #ffff;
+}
+
+.section-heading h2 a{
+    color: #3fa44c;
 }
 
 h3 a {
