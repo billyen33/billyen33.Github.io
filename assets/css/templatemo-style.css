@@ -113,7 +113,7 @@ html {
 }
 
 .main-nav li a {
-    height: 55px;
+    height: 100%;/*55px;*/
     line-height: 55px;
     display: inline-block;
     font-size: 16px;
@@ -137,8 +137,7 @@ html {
 }
 
 .menu .image img {
-    width: 100px;
-    height: 100px;
+    width: 45%;
     border-radius: 50%;
     text-align: center;
 }
@@ -164,11 +163,11 @@ html {
 }
 
 .menu .social-network {
-    margin-top: 20px;
+    margin-top: 2%;
 }
 
 .menu .social-network ul {
-    height: 10px;
+    height: 100%;
 }
 
 .menu .social-network ul li {
@@ -347,7 +346,6 @@ h3 a {
 
 .section-heading span3 {
     padding-top: 15px;
-    
     text-align: left;    
 }
 
@@ -612,7 +610,7 @@ button:hover {
 section.about-me .section-heading a {
     color: #3fa44c;
     font-weight: bold;
-    text-decoration: underline;
+
 }
 
 /* My Work */
@@ -867,7 +865,7 @@ section.contact-me span a {
     text-align: center;
 }
 
-@media screen and (max-width: 1680px) {
+@media screen and (max-width: 16800px) {
     .menu {
         left: 5%;
     }
@@ -880,20 +878,25 @@ section.contact-me span a {
     }
 }
 
-@media screen and (max-width: 1680px) and (min-width: 846px) { 
+@media screen and (max-width: 16800px) and (min-width: 846px) { 
     .menu .social-network ul li a {
+        width: 50px;
+        height: 100%;
+        line-height: 200%;
+        /*
         width: 50px;
         height: 36px;
         line-height: 36px;
-        margin-top: 5px;
+        */
+        margin-top: 0%;
     }
 
     .menu .social-network ul li {
-        margin: 0;
+        margin: 3%;
     }
 
     .menu .image {
-        margin-top: 20px;
+        margin-top: 10%;
     }
 }
 
