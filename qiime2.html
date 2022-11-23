@@ -93,53 +93,32 @@ https://templatemo.com/tm-531-reflux
       <section class="section project" data-section="section2" style="border-bottom: 3px solid rgba(255, 255, 255, 0)">
         <div class="container">
           <div class="section-heading" style="padding-bottom: 10px;" >
-            <h2>Qiime2 Output Cleaner</h2>
+            <h2>QIIME 2 Output Cleaner</h2>
             <div class="line-dec"></div>
             <span
               >
-              <h5>A Fully Automated Indoor Farming System</h5>
+              <h5>A Bioinformatics Visualization Tool</h5>
               </span>
             
           </div>
-          <h3>Problem:</h3>
-          Existing hydroponic systems are difficult to operate over time and require a lot of manual labor, which made maintaining them on Northwestern’s campus impossible due to the COVID-19 pandemic.
-          <br><img src="assets/images/autoaqua/AutoAquaponics.jpg" style="padding: 20px; width: 60%; display: block; margin-left:auto; margin-right:auto;" class="center" alt="AutoAqua">
-          
-          <h3>Solution:</h3>
-          AutoAquaponics is a fully automated, remote monitored and controlled farming system in Ford SB240 that efficiently outputs both fish and plants without human labor for at least one month while minimizing the use of water and electricity.
-          
-          <br><img src="assets/images/autoaqua/PlumbingCAD.png" style="padding: 20px; width: 60%; display: block; margin-left:auto; margin-right:auto;" class="center" alt="AutoAqua CAD">
-          
-          <h3>Plumbing:</h3>
-          In order to create a low-maintenance and robust aquaponic system, we built three filter tanks, each with their distinct functions (settling tank, membrane filtration, biofilm reactor) in order to remove pollutants in the water and transform fish waste into nutrients for the plants. The plumbing system is controlled with a number of electronic valves, and it consists of a 100 gallon fish tank, two 40 gallon grow beds, and a 60 gallon sump tank.
-          
-          <br><img src="assets/images/autoaqua/plumbing_design.png" style="padding: 20px; width: 90%; display: block; margin-left:auto; margin-right:auto;" class="center" alt="plumbing">
-
-          
-          <div class="right-image-post" style="border-top: 0px solid rgba(255, 255, 255, 0)">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-text">
-                  <h4>Electronics:</h4>
-                  <p>
-                    The electronics portion of AutoAquaponics controls everything from our plant lights to water pumps and valves. It consists of a smart outlet box powered by an ESP32 microcontroller and a sensor box that connects to WiFi and interface with the rest of the system.
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-image">
-                  <img src="assets/images/autoaqua/electronicsbox.jpg" alt="IAEP Logo" style="width: 70%; border-radius: 0px;">
-                </div>
-              </div>
-            </div>
+          <h3>About:</h3>
+          While working as a Research Assistant in the Wells Environmental Biotechnology Lab to characterize the microbial communities in
+          different bio-electrochemical systems, I noticed that there was no built-in way to produce good community composition plots
+          using the output data from QIIME 2, a popular bioinformatics package. Because each sample can contain thousands of different
+          microbes, it is very useful to be able to display just the most common taxa in each sample and compare them. My program lets users
+           create cleanly formatted community composition graphs using the collapsed feature table TSV output from QIIME 2. QIIME 2 Output Cleaner 
+           is GUI-based and allows the user to select for as many top taxa per sample as they want in their graph without having to code,
+            and it also outputs a CSV file that the user can export to other programs like R or Excel.
+          <br>
+ 
+          <img src="assets/images/qiime2/graph.png" style="padding: 20px; width: 80%; display: block; margin-left:auto; margin-right:auto;" class="center" alt="AutoAqua">
           </div>
-
-          <h3>Software:</h3>
-          Our software platform allows users to monitor and control the system from afar, and its features include live sensor graphs, email/text updates, and a video stream of the fish tank.
-          
-          <br><img src="assets/images/autoaqua/dashboard_new.png" style="padding: 20px; width: 60%; display: block; margin-left:auto; margin-right:auto;" class="center" alt="plumbing">
-
-          <h3 style="text-align: center;">Check out the quarterly <a href="https://eswprojects.planio.com/projects/autoaquaponics/news" target="_blank">AutoAquaponics blog</a> for detailed updates!</h3>
+          <h3>Concepts Utilized:</h3>
+            <li><strong style="color: #3fa44c;">TKinter</strong> to build a Python graphical user interface</li>
+            <li><strong style="color: #3fa44c;">Pandas </strong>to efficiently sort and manipulate TSV data tables</li>
+            <li><strong style="color: #3fa44c;">NumPy</strong> to concatenate arrays and manipulate color maps for the plot legend</li>
+      
+          <br><h3 style="text-align: center;">Check out my <a href="https://github.com/billyen33/Qiime2-Output-Cleaner" target="_blank">GitHub repository</a> to download the code</h3>
           <!--
           <div class="left-image-post">
             <div class="row">
