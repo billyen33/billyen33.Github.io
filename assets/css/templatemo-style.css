@@ -112,6 +112,17 @@ html {
     display: block;
 }
 
+li a {
+    color: #3fa44c;
+}
+.row {
+    display: flex;
+  }
+  
+.column {
+flex: 33.33%;
+padding: 5px;
+}
 .main-nav li a {
     height: 100%;/*55px;*/
     line-height: 55px;
