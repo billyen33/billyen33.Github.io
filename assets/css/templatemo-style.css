@@ -34,9 +34,8 @@ textarea {
     outline: none;
 }
 
-a,
 a:hover {
-    text-decoration: none;
+    color: #3fa44c;
 }
 
 p {
@@ -409,7 +408,9 @@ button:hover {
     padding-top: 30px;
     border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
-
+img {
+    border-radius: 30px;
+}
 .left-image img{
     border-radius: 5px;
 }
