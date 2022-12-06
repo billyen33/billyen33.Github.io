@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/images/frog.ico">
+    <title>Bill Yen</title>
+<!--
+Reflux Template
+https://templatemo.com/tm-531-reflux
+-->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197813072-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-197813072-1');
+    </script>
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <img src="assets/images/headshot.jpg" alt="" />
+            </div>
+            <div class="author-content">
+              <h4>Bill Yen</h4>
+              <span><a href="https://www.usgbc.org/people/bill-yen/0011394603" target="_blank">LEED AP BD+C</a></span>
+              <span2>
+              <br>B.S. Mechanical Engineering (Robotics)
+              <br>Minor in Environmental Engineering
+              <br>Segal Design Certificate</br>
+              Northwestern 2023
+              </span2>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul>
+                <li><a href="index.html#about-me">About Me</a></li>
+                <li><a href="index.html#my-work">Projects</a></li>
+                <li><a href="index.html#my-experience">Experiences</a></li>
+                <li><a href="index.html#my-awards">Awards</a></li>
+                <li><a href="index.html#my-resume">Resume/CV</a></li>
+                <li><a href="index.html#contact">Contact Me</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="social-icons">
+                <li>
+                  <a href="https://www.linkedin.com/in/bill-yen/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/billyen33" target="_blank"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/5v99VyWBUHAcq2Ub9" target="_blank"><i class="fa fa-photo"></i></a>
+                </li>
+              </ul>
+            </div>
+            <!--<div class="copyright-text">
+              <p>Copyright &copy 2022 Bill Yen.<br>All Rights Reserved.</br></p>
+              
+            </div>-->
+          </div>
+        </div>
+      </div>
+
+      <section class="section project" data-section="section2" style="border-bottom: 3px solid rgba(255, 255, 255, 0)">
+        <div class="container">
+          <div class="section-heading" style="padding-bottom: 10px;" >
+            <h2>Swarm Robotics Projects</h2>
+            <div class="line-dec"></div>
+            <span
+              >
+              <h5>Decentralized Robot Controller for Complex Group Behaviors</h5>
+              </span>
+            
+          </div>
+          <h3>About:</h3>
+          I built three decentralized robot controllers as a part of Northwestern University’s Swarms and Multi-Robot Systems
+           (MECH_ENG 409) course to learn more about the state of the art research that addresses the challenges of controlling large
+           groups of robots. These controllers were implemented using Python, and they ran on a simulated robotic swarm modeled after
+           the <a href="https://users.cs.northwestern.edu/~mrubenst/ICRA18_hierarchy.pdf" target="_blank" style="color: white; text-decoration: underline;">Coachbot</a>.
+           The simulation ran in a virtual Linux environment via <a href="https://www.docker.com/" target="_blank" style="color: white; text-decoration: underline;">Docker</a>.
+           Through working on these projects, I gained hands-on experience with systems design, swarm robotics, and nature-inspired algorithms.
+          <br><img src="assets/images/swarm/demo.png" style="padding: 20px 5px 20px 5px; width: 33%; border-radius: 25px;" alt="flock">
+          <img src="assets/images/swarm/Smoothed_N.png" style="padding: 20px 5px 20px 5px; width: 33%; border-radius: 25px;" alt="N">
+          <img src="assets/images/swarm/2shells.png" style="padding: 20px 5px 20px 5px; width: 33%; border-radius: 25px;" alt="two shells">
+          
+          <div class="right-image-post" style="border-top: 0px solid rgba(255, 255, 255, 0)">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>Ad Hoc Localization Network</h4>
+                  <p>
+                    For this project, I generated an approximate global coordinate system by having a number of static robots communicate with their neighbors.
+                    I then smoothed this coordinate using an approximation method from Ragpal et. al<sup> 1</sup>, and had certain robots
+                     turn on their onboard LED based on their position in this coordinate system to form the Northwestern N. This method requires
+                     no global communication or sensor to create the coordinate. It works by having two arbitrary seed robots send out "hop counts" and
+                     incrementing these hop counts through the rest of the swarm. As a result, it is fully decentralized and scalable to much larger swarms.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <video width="110%" autoplay muted loop>
+                    <source src="assets/images/swarm/localization.mov" type="video/mp4">
+                    
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="left-image-post" style="border-top: 0px solid rgba(255, 255, 255, 0)">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <video width="100%" autoplay muted loop>
+                    <source src="assets/images/swarm/brazil_nut.mov" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>Sort Robots With Brazil Nut Effect</h4>
+                  <p>
+                    This project explores the idea of using the <a href="https://www.scientificamerican.com/article/all-mixed-up-discover-the-brazil-nut-effect/" target="_blank" style="color:white; text-decoration: underline;">Brazil nut effect</a>, 
+                    a type of granular segregation, to group robots without direct communication between them<sup> 2</sup>.
+                    My algorithm assigns a virtual diameter to each robot and made the center of the map the direction of gravity, which resulted in the
+                    robots with the smallest radii (blue robots) to naturally end up in the center. By tuning the virtual sizes of the robots and the weights of
+                    their attraction and repellent vectors, many groups of robots can be sorted into semi-concentric circles.
+                  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-image-post" style="border-top: 0px solid rgba(255, 255, 255, 0)">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>Reynolds Flocking in Robotic Swarm</h4>
+                  <p>
+                    I implemented a flocking behavior described by <a href="https://www.red3d.com/cwr/" target="_blank" style="color:white; text-decoration: underline;">Craig W. Reynolds</a> to make a group
+                    of 20 robots travel together like a flock of birds. This requires the robots to communicate
+                    to each other directly and constantly calculate their relative headings and distances
+                    in order to compute their alignment, cohesion, separation, and migration vectors <sup> 3</sup>.
+                    This form of travel is robust to failures in individual robots because as long as most of the swarm is facing
+                     the right way, the malfunctioning robot will be able to self-correct back to the same direction as its peers
+                     due to the alignment vector's effect.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <video width="100%" autoplay muted loop>
+                    <source src="assets/images/swarm/flock.mov" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><h3>References:</h3>
+          <ol type="1">
+            <li><a href="https://www.researchgate.net/publication/221284158_Organizing_a_Global_Coordinate_System_from_Local_Information_on_an_Ad_Hoc_Sensor_Network" target="_blank">
+               Organizing a Global Coordinate System from Local Information on an Ad Hoc Sensor Network</a></li>
+            <li><a href="https://ieeexplore.ieee.org/document/5353942" target="_blank">
+               Segregation in swarms of mobile robots based on the Brazil nut effect</a></li>
+            <li><a href="https://ieeexplore.ieee.org/document/6095129" target="_blank">
+               Reynolds flocking in reality with fixed-wing robots: communication range vs. maximum turning rate</a></li>
+          </ol>
+          <br><h3 style="text-align: center;">Check out my <a href="https://github.com/billyen33/Swarm_Robotics_Projects" target="_blank">GitHub repository</a> to download my code</h3>
+          <!--
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="assets/images/NNN_ESW.png" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>Student Engineers Working Toward Greener World Through Innovation</h4>
+                  <p>
+                    Northwestern's chapter of Engineers for a Sustainable World is building a greener future through constructing an automated aquaponic system in the Ford Motor Company Engineering Design Center
+                  <div class="white-button">
+                    <a href="https://youtu.be/rCpo_hfJQRk?t=960" target="_blank">See More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>Bill Yen Awarded the IAEP Scholarship</h4>
+                  <p>
+                    Bill Yen (BS ’23) was awarded the 1st place Illinois Association of Environmental Professionals (IAEP) Scholarship for his proposal on sustainability in business practices.
+                  </p>
+                  <div class="white-button">
+                    <a href="https://www.mccormick.northwestern.edu/civil-environmental/news-events/news/articles/2021/bill-yen-makes-the-business-case-for-sustainability.html" target="_blank">See More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="assets/images/iaep_logo.jpg" alt="IAEP Logo" style="width: 50%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="assets/images/winning_rotator.png" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>NUHome by engiNUity</h4>
+                  <p>
+                    Northwestern's NUHome was awarded the Residential Grand Winner in the 2021 Solar Decathlon Design Challenge by U.S. Secretary of Energy Jennifer Granholm.
+                  </p>
+                  <div class="white-button">
+                    <a href="https://www.mccormick.northwestern.edu/civil-environmental/news-events/news/articles/2021/solar-decathalon-grand-winner.html" target="_blank">See More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>ESW-AutoAquaponics Continues Progress Over Pandemic</h4>
+                  <p>
+                    McCormick Assistant Dean for Student Affairs Ellen Worsdall discussed how student organizations have overcame challenges due to COVID-19 regulations.
+                  </p>
+                  <div class="white-button">
+                    <a href="https://www.mccormick.northwestern.edu/news/articles/2021/04/one-mccormick-lecture-highlights-pandemic-related-adjustment-of-student-activities/" target="_blank">See More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="assets/images/eswoffice.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="assets/images/arborlong.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>Arbor Air Purifier</h4>
+                  <p>
+                    Three first-year students won the White Space Product Developement Challenge for designing a natural air purifier that uses moss to clean air.
+                  </p>
+                  <div class="white-button">
+                    <a href="https://www.mccormick.northwestern.edu/news/articles/2020/05/trio-of-mccormick-first-year-students-win-design-contest.html" target="_blank">See More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>-->
+
+    <!-- Scripts -->
+    <!--Collapsible-->
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>
