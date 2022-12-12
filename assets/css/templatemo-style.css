@@ -1128,25 +1128,35 @@ section.contact-me span a {
 
 /*Last panel*/
     .timeline > .last > .timeline-panel {
-        float: right;
-        right: -80px;
+        float: left;
+        left: -80px;
     }
     .timeline > .last > .timeline-panel:before {
-        border-left-width: 0;
-        border-right-width: 15px;
-        left: -15px;
-        right: auto;
+        position: absolute;
+        top: 26px;
+        right: -15px;
+        display: inline-block;
+        border-top: 15px solid transparent;
+        border-left: 15px solid #3fa44c;
+        border-right: 0 solid #3fa44c;
+        border-bottom: 15px solid transparent;
+        content: " ";
     }
     .timeline > .last > .timeline-panel:after {
-        border-left-width: 0;
-        border-right-width: 14px;
-        left: -14px;
-        right: auto;
+        position: absolute;
+        top: 26px;
+        right: -15px;
+        display: inline-block;
+        border-top: 15px solid transparent;
+        border-left: 15px solid #3fa44c;
+        border-right: 0 solid #3fa44c;
+        border-bottom: 15px solid transparent;
+        content: " ";
     }
 
     .timeline > .last{
-        float: right; 
-        clear: right;
+        float: left; 
+        clear: left;
         margin-top: 10px;
         margin-bottom: 30px;
     }
@@ -1212,10 +1222,7 @@ section.contact-me span a {
             padding-left: 12px;
 		}
 
-        .timeline > .last > .timeline-badge{
-			left: 1px;
-            padding-left: 12px;
-		}
+
 
 	.timeline > li > .timeline-badge:before{
 		position: absolute;
@@ -1235,9 +1242,7 @@ section.contact-me span a {
 			left: -11px;
 		}
 
-        .timeline > .last > .timeline-badge:before{
-			left: -11px;
-		}
+
 
 
 
@@ -1330,8 +1335,8 @@ section.contact-me span a {
 	}
 
     .timeline > .last{
-		float: left; 
-		clear: left;
+		float: right; 
+		clear: right;
 		margin-top: 0;
 		margin-bottom: 20px;
         min-height: 0px;
@@ -1348,11 +1353,5 @@ section.contact-me span a {
     left: -11.5px;
 	}
 
-    ul.timeline > li > .timeline-badge, ul.timeline > .last > .timeline-badge{
-        left: 15.5px;
-        padding-right: 10%;
-        }   
-        ul.timeline > li > .timeline-badge:before, ul.timeline > .last > .timeline-badge:before{
-        left: -11.5px;
-        }
+
 }
