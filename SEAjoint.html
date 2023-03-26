@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/images/frog.ico">
+    <title>Bill Yen</title>
+<!--
+Reflux Template
+https://templatemo.com/tm-531-reflux
+-->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197813072-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-197813072-1');
+    </script>
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <img src="assets/images/headshot.webp" alt="" />
+            </div>
+            <div class="author-content">
+              <h4>Bill Yen</h4>
+              <span><a href="https://www.usgbc.org/people/bill-yen/0011394603" target="_blank">LEED AP BD+C</a></span>
+              <span2>
+              <br>B.S. Mechanical Engineering (Robotics)
+              <br>Minor in Environmental Engineering
+              <br>Segal Design Certificate</br>
+              Northwestern 2023
+              </span2>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul>
+                <li><a href="index.html#about-me">About Me</a></li>
+                <li><a href="index.html#my-work">Projects</a></li>
+                <li><a href="index.html#my-experience">Experiences</a></li>
+                <li><a href="index.html#my-awards">Awards</a></li>
+                <li><a href="index.html#my-resume">Resume/CV</a></li>
+                <li><a href="index.html#contact">Contact Me</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="social-icons">
+                <li>
+                  <a href="https://www.linkedin.com/in/bill-yen/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/billyen33" target="_blank"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/5v99VyWBUHAcq2Ub9" target="_blank"><i class="fa fa-photo"></i></a>
+                </li>
+              </ul>
+            </div>
+            <!--<div class="copyright-text">
+              <p>Copyright &copy 2022 Bill Yen.<br>All Rights Reserved.</br></p>
+              
+            </div>-->
+          </div>
+        </div>
+      </div>
+
+      <section class="section project" data-section="section2" style="border-bottom: 3px solid rgba(255, 255, 255, 0)">
+        <div class="container">
+          <div class="section-heading" style="padding-bottom: 10px;" >
+            <h2>Series Elastic Actuator Joint</h2>
+            <div class="line-dec"></div>
+            <span
+              >
+              <h5>Backdrivable Joint For Safer Human-Robot Interaction</h5>
+              </span>
+            
+          </div>
+          <h3>Problem:</h3>
+          Current commercial robots are able to exert an immense amount of force with the large motors and transmission boxes in their joints, 
+          but this has the unintended consequence of making robotic manipulators dangerous for the people around them. Industrial
+          robots on factory lines have to operate in cages since the torque they generate can seriously injure humans,
+          which drastically limits their applications.
+          
+          <br><img src="assets/images/SEA/robot_in_cage.webp" style="padding: 20px; width: 50%; display: block; margin-left:auto; margin-right:auto;" class="center" alt="Robot in cage">
+          <center><a href="https://www.researchgate.net/publication/344972064_The_State_of_Industrial_Robotics_Emerging_Technologies_Challenges_and_Key_Research_Directions" target="_blank" style="color: white; text-decoration: underline;">Sanneman et. al</a></center> 
+          
+          <br><h3>Solution:</h3>
+          My team and I built a teleoperated robot joint with <a href="https://enriquedelsol.com/2017/12/05/backdrivability/" target="_blank" style="color: white; text-decoration: underline;">backdrivability</a> 
+          as a part of Northwestern University’s Robotics Design Studio I
+           (MECH_ENG 472-1) course to address this bottleneck in developing collaborative robots (<a href="https://www.mathworks.com/discovery/cobots.html#:~:text=Work%20collaboratively%20for%20flexible%20factory,Safe%20execution%20of%20complex%20tasks" target="_blank" style="color: white; text-decoration: underline;">cobots</a>).
+           Our device consists of a large transmission motor with a high gear ratio and a smaller haptic motor with no gearbox. By adding a spring
+           element to the shaft of the transmission motor, we were able to measure the amount of torque it exerts on the environment and adjust the velocity
+           of the transmission motor accordingly. As the user turns the haptic motor shaft, the large transmission motor will follow its position. However,
+           if the transmission motor runs into an obstacle (such as a human hand), it will become compliant and turn in the direction of the torque instead of bulldozing through the
+           hand. This concept makes it safer for humans to interact with powerful actuators and opens up doors for building more dexterous robots capable of
+           handling delicate materials.
+          
+          <center>
+          <br><video width="60%" autoplay muted loop>
+          <source src="assets/images/SEA/Full_Demo.MOV" type="video/mp4"></center>
+
+          <br>As one can see, the transmission wheel (left) closely follows the position of the haptic motor knob (right), but it remains compliant to
+          a human tugging on it (the large reflected inertia from its 47:1 transmission ratio makes it extremely hard to turn by default).
+
+          <div class="right-image-post" style="border-top: 0px solid rgba(255, 255, 255, 0)">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="left-text">
+                  <h4>Series Elastic Actuator</h4>
+                  <p>
+                    We turned our transmission motor into a <a href="https://www.intechopen.com/chapters/51224" target="_blank" style="color: white; text-decoration: underline;">series elastic actuator</a> (SEA) by installing a custom torsional spring we waterjetted out of 4140 alloy steel. The geometry of the spring
+                    have a spring constant of roughly 348 Nm/rad in simulation, which gives us a reasonably small deflection (~0.03 rad) upon impact.
+                    A hall effect sensor along with a small magnet is used as a highly accurate yet low-cost (<$3) method of translating this deflection into a torque
+                    reading. The hall sensor is mounted on a 3D-printed slip ring to prevent wires from coiling during operation (see below).
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="right-image">
+                  <video width="110%" autoplay muted loop>
+                    <source src="assets/images/SEA/Backdrivability_Pinky.mp4" type="video/mp4">
+                    
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <br><img src="assets/images/SEA/SlipRing.webp" style="padding: 20px 5px 20px 5px; width: 49%; border-radius: 0px;" alt="SEA">
+          <img src="assets/images/SEA/FEA.webp" style="padding: 20px 5px 20px 5px; width: 46%; border-radius: 0px;" alt="FEA">
+
+          <div class="left-image-post" style="border-top: 0px solid rgba(255, 255, 255, 0)">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="left-image">
+                  <img src="assets/images/SEA/Admittance.svg" alt="admittance control" style="width: 100%">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="right-text">
+                  <h4>Admittance Control</h4>
+                  <p>
+                    Admittance control maps an input force to a corresponding motion, which allows a robot to follow
+                    an external force and improves backdrivability. In our system, we measure the torque exerted on the SEA and combine it with the torque necessary to track
+                    the position of the haptic knob in order to compute the desired velocity for our transmission motor. The <a href="https://www.roboteq.com/products/products-brushless-dc-motor-controllers/sbl1360-277-detail" target="_blank" style="color: white; text-decoration: underline;">RoboteQ</a> motor controller
+                    we used then perform its own velocity control loop to produce the actual motor speed.
+                  </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-image-post" style="border-top: 0px solid rgba(255, 255, 255, 0)">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>Mechanical Assembly</h4>
+                  <p>
+                    The transmission and haptic motors are mounted on different mounting plates along with their own RoboteQ controller, MCU (Arduino Teensy), and power supply.
+                    Because the transmission motor can produce a potentially dangerous amount of force, there is also an emergency stop switch next to it. Both motors have custom
+                    mounting brackets machined out of aluminum and steel, which ensure that they are secure even when the motors are operating. The only connection between
+                    the two motor plates is a cable for serial communication between the two MCUs.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="assets/images/SEAjoint.webp" alt="mechanical assembly" style="width: 100%">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br><br><h3>My Role:</h3>
+<!-- 
+          As the controls engineer on the team, I took on the sensor integration and software portion of the project, which include: -->
+          <li>Led the software and controls portion of the project using Arduino Teensy and C++</li>
+          <li>Integrated encoders and motor controllers into the system and wrote the drivers necessary for communication (CAN, SPI, RS232)</li>
+          <li>Implemented both positional control and admittance control on the transmission and haptic motor MCU</li>
+
+          <br><img src="assets/images/SEA/Bill.webp" style="padding: 20px; width: 50%; display: block; margin-left:auto; margin-right:auto;" class="center" alt="full team">
+
+          <br><h3>Credit:</h3>
+          This project was made possible by my wonderful teammates <a href="https://chrisuustal.com/" target="_blank" style="color:#3fa44c;">Chris Uustal</a>,
+          <a href="https://www.linkedin.com/in/kimyoonsung" target="_blank" style="color:#3fa44c;">Yoon Kim</a>, 
+          <a href="https://www.linkedin.com/in/sparsh-gautam-9a7385183" target="_blank" style="color:#3fa44c;">Sparsh Gautam</a>, 
+          and <a href="https://www.linkedin.com/in/danielbhpark/" target="_blank" style="color:#3fa44c;">Daniel Park</a>.
+          
+          <br><img src="assets/images/SEA/Full_Team.webp" style="padding: 20px; width: 50%; display: block; margin-left:auto; margin-right:auto;" class="center" alt="full team">
+
+    <!-- Scripts -->
+    <!--Collapsible-->
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>
