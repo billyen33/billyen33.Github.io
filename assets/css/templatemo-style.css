@@ -1165,22 +1165,6 @@ border-width: 8px;
 pointer-events: none;
 }
 
-.direction-l .flag {
--webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
--moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-font-size: 0.9em;
-color: #3fa44c;
-}
-
-.direction-r .flag {
--webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
--moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-font-size: 0.9em;
-color: #3fa44c;
-}
-
 .time-wrapper {
 display: block;
 position: relative;
@@ -1231,7 +1215,8 @@ padding: 1em;
 z-index: 15;
 text-align: left;
 }
-  
+
+
   @media screen and (min-width: 1320px){
     .timeline {
       width: 100%;
@@ -1271,6 +1256,22 @@ text-align: left;
       float: left;
       text-align: left;
     }
+
+    .direction-l .flag {
+        -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        font-size: 0.9em;
+        color: #3fa44c;
+        }
+        
+    .direction-r .flag {
+        -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        font-size: 0.9em;
+        color: #3fa44c;
+        }
   
     .direction-r {
       position: relative;
@@ -1357,6 +1358,23 @@ text-align: left;
     }
   }
 
+  @media screen and (max-width: 991px){
+    .direction-l .flag {
+        -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        font-size: 0.8em;
+        color: #3fa44c;
+        }
+        
+        .direction-r .flag {
+        -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        font-size: 0.8em;
+        color: #3fa44c;
+        }
+  }
 /* .timeline {
 	
     max-width: 100%;
