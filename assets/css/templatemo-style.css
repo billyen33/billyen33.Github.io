@@ -346,7 +346,7 @@ h3 a {
 
 .section-heading span {
     margin-top: 5px;
-    font-size: 0.8em;
+    font-size: 16px;
     color: #ffff;
     letter-spacing: 0.5px;
 }
@@ -360,6 +360,13 @@ h3 a {
 .section-heading span3 {
     padding-top: 15px;
     text-align: left;    
+}
+
+.section-heading span4 {
+    margin-top: 5px;
+    font-size: 0.65em;
+    color: #ffff;
+    letter-spacing: 0.5px;
 }
 
 
@@ -1180,7 +1187,7 @@ position: relative;
 /* display: inline-block; */
 margin: 4px 0 0 0;
 z-index: 14;
-line-height: 1.5em;
+line-height: 1.2em;
 font-size: 0.8em;
 /* vertical-align: middle; */
 color: #fff;
