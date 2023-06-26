@@ -1375,6 +1375,24 @@ text-align: left;
         color: #3fa44c;
         }
   }
+
+  @media screen and (max-width: 500px) and (min-width: 991px){
+    .direction-l .flag {
+        -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        font-size: 0.6em;
+        color: #3fa44c;
+        }
+        
+        .direction-r .flag {
+        -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
+        font-size: 0.6em;
+        color: #3fa44c;
+        }
+  }
 /* .timeline {
 	
     max-width: 100%;
