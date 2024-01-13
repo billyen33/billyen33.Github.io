@@ -62,6 +62,10 @@ ul {
     list-style: none;
 }
 
+a{
+    color: #3fa44c;
+}
+
 ul li {
     display: inline-block;
 }
