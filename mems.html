@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/images/frog.ico">
+    <title>Bill Yen</title>
+<!--
+Reflux Template
+https://templatemo.com/tm-531-reflux
+-->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197813072-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-197813072-1');
+    </script>
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <img src="assets/images/headshot.webp" alt="" />
+            </div>
+            <div class="author-content">
+              <h4>Bill Yen</h4>
+              <span><a href="https://www.usgbc.org/people/bill-yen/0011394603" target="_blank">LEED AP BD+C</a></span>
+              <span2>
+              <br>Ph.D. Electrical Eng. | Stanford
+              <br>Stanford Graduate Fellow
+              <br>B.S. Mechanical Eng. | Northwestern '23
+              </span2>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul>
+                <li><a href="index.html#about-me">About Me</a></li>
+                <li><a href="index.html#my-work">Projects</a></li>
+                <li><a href="index.html#my-experience">Experiences</a></li>
+                <li><a href="index.html#my-awards">Awards</a></li>
+                <li><a href="index.html#my-resume">CV</a></li>
+                <li><a href="index.html#contact">Contact Me</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://www.linkedin.com/in/bill-yen/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/billyen33" target="_blank"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/5v99VyWBUHAcq2Ub9" target="_blank"><i class="fa fa-google"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright-text">
+              <p>Copyright &copy 2024 Bill Yen.</br></p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section project" data-section="section2" style="border-bottom: 3px solid rgba(255, 255, 255, 0)">
+        <div class="container">
+          <div class="section-heading" style="padding-bottom: 10px;" >
+            <h2>Capacitive Hydrostatic Pressure Sensor</h2>
+            <div class="line-dec"></div>
+            <span
+              >
+              <h5>Depth Sensing For Physical Oceanography</h5>
+              </span>
+            
+          </div>
+          <h3>About:</h3>
+          As part of my graduate coursework in MEMS and sensor system design, I developed and evaluated a conceptual hydrostatic pressure sensor aimed at enabling high-resolution pressure measurements in uniform external pressure fields. By combining mechanical modeling, electro-mechanical transduction principles, and readout architecture design, I gained deep insight into how physical structure and interface circuitry jointly determine sensitivity, linearity, and noise performance in MEMS pressure sensing.
+          <br>
+          <br><video width="80%" controls style="display: block; margin-left:auto; margin-right:auto;" class="center" >
+            <source src="assets/images/mems/FinalPresentation.mov" type="video/mp4">
+            
+          Your browser does not support the video tag.
+          </video>
+          <br>
+          <h3>Concepts Utilized:</h3>
+            <li><strong style="color: #3fa44c;">Finite-element analysis (FEA)</strong> to simulate stress, displacement, and structural response under uniform external pressure</li>
+            <li><strong style="color: #3fa44c;">Capacitive transduction</strong> to map mechanical deformation into femtofarad-scale capacitance changes suitable for electrical readout</li>
+            <li><strong style="color: #3fa44c;">Analog interface & noise analysis</strong> to assess parasitic capacitance, noise limits, and achievable pressure resolution in the sensor readout</li>
+            <li><strong style="color: #3fa44c;">Bench-scale physical validation</strong> using PLA & 316 stainless steel prototypes to correlate experimental behavior with FEA predictions</li>
+          <br>
+          <h3>Credit:</h3>
+          This project was made with my awesome partner <a href="https://www.linkedin.com/in/evan-twarog/" target="_blank" style="color:#3fa44c;">Evan Twarog</a>.
+    <!-- Scripts -->
+    <!--Collapsible-->
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>

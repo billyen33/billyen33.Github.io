@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/images/frog.ico">
+    <title>Bill Yen</title>
+<!--
+Reflux Template
+https://templatemo.com/tm-531-reflux
+-->
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/lightbox.css" />
+
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197813072-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-197813072-1');
+    </script>
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <img src="assets/images/headshot.webp" alt="" />
+            </div>
+            <div class="author-content">
+              <h4>Bill Yen</h4>
+              <span><a href="https://www.usgbc.org/people/bill-yen/0011394603" target="_blank">LEED AP BD+C</a></span>
+              <span2>
+              <br>Ph.D. Electrical Eng. | Stanford
+              <br>Stanford Graduate Fellow
+              <br>B.S. Mechanical Eng. | Northwestern '23
+              </span2>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul>
+                <li><a href="index.html#about-me">About Me</a></li>
+                <li><a href="index.html#my-work">Projects</a></li>
+                <li><a href="index.html#my-experience">Experiences</a></li>
+                <li><a href="index.html#my-awards">Awards</a></li>
+                <li><a href="index.html#my-resume">CV</a></li>
+                <li><a href="index.html#contact">Contact Me</a></li>
+              </ul>
+            </nav>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://www.linkedin.com/in/bill-yen/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/billyen33" target="_blank"><i class="fa fa-github"></i></a>
+                </li>
+                <li>
+                  <a href="https://photos.app.goo.gl/5v99VyWBUHAcq2Ub9" target="_blank"><i class="fa fa-google"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="copyright-text">
+              <p>Copyright &copy 2024 Bill Yen.</br></p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section project" data-section="section2" style="border-bottom: 3px solid rgba(255, 255, 255, 0)">
+  <div class="container">
+    <div class="section-heading" style="padding-bottom: 10px;">
+      <h2>Smartphone Sensor Projects</h2>
+      <div class="line-dec"></div>
+      <span>
+        <h5>Signal Processing and Sensor Systems for Consumer Devices</h5>
+      </span>
+    </div>
+
+    <h3>About:</h3>
+    As part of Stanford's <em>Understanding the Sensors in Your Smartphone</em> course, I designed and validated three sensing
+    systems commonly used in modern consumer devices: inertial sensing, capacitive touch sensing, and
+    photoplethysmography (PPG). These projects emphasized end-to-end sensor pipelines, from physical
+    transduction and noise modeling to signal processing and real-world validation.
+
+    <br>
+    <img src="assets/images/smartphone/imu.webp" style="padding: 20px 5px; width: 33%; border-radius: 25px;" alt="imu">
+    <img src="assets/images/smartphone/touch.webp" style="padding: 20px 5px; width: 33%; border-radius: 25px;" alt="touch">
+    <img src="assets/images/smartphone/ppg.webp" style="padding: 20px 5px; width: 33%; border-radius: 25px;" alt="ppg">
+
+    <!-- IMU PROJECT -->
+    <div class="right-image-post" style="border-top: 0px solid rgba(255, 255, 255, 0)">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="left-text">
+            <h4>IMU Position Tracking</h4>
+            <p>
+              We explored inertial sensor fusion using accelerometer and gyroscope data collected on a Raspberry Pi platform. A complementary filter was implemented to estimate tilt, revealing how accelerometer bias, gyroscope drift, sampling rate, and integration error impact orientation accuracy. A Kalman filter–based state estimator was then developed to track position from acceleration measurements, including calibration to remove gravitational leakage and tuning of process and measurement noise. Allan deviation analysis was used to characterize sensor noise regimes (white and 1/f noise) and relate them to real-world limits in drift and position estimation.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="right-image">
+            <img src="assets/images/smartphone/imu.png" style="padding: 20px 5px; width: 90%; border-radius: 25px;" alt="ppg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOUCH SENSING PROJECT -->
+    <div class="left-image-post" style="border-top: 0px solid rgba(255, 255, 255, 0)">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="left-image-post" style="border-top: 0px solid rgba(255, 255, 255, 0)">
+  <div class="row">
+
+    <!-- LEFT: Video -->
+    <div class="col-md-6">
+      <div class="left-image">
+        <video width="100%" autoplay muted loop>
+          <source src="assets/images/smartphone/drag_elipse_irl_trimmed.mp4" type="video/mp4"
+                  style="width:100%; border-radius: 15px;">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <!-- RIGHT: GIF -->
+    <div class="col-md-6">
+      <div class="right-image">
+        <img src="assets/images/smartphone/drag_ellipse.gif"
+             alt="CDMA Touch Heatmap"
+             style="width:100%; border-radius: 15px;">
+      </div>
+    </div>
+
+  </div>
+</div>
+        </div>
+        <div class="col-md-6">
+          <div class="right-text">
+            <h4>CDMA-Based Capacitive Touch Sensing</h4>
+            <p>
+              We designed a capacitive touch-sensing system using pseudorandom binary sequence (PRBS) modulation
+              across five drive lines and seven sense lines. By applying  Code Division Multiple Access (CDMA) techniques, the system achieved
+              robust touch localization and noise rejection, and was validated in hardware using a custom
+              capacitive touch pad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PPG PROJECT -->
+    <div class="right-image-post" style="border-top: 0px solid rgba(255, 255, 255, 0)">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="left-text">
+            <h4>Photoplethysmography (PPG) Signal Processing</h4>
+            <p>
+              We built a signal-processing pipeline for a PPG sensor using FFT-based spectral analysis and peak detection to extract heart rate variability, beats per minute, and post-exercise recovery time constants, and analyzed performance non-idealities arising from sensor placement and user motion using real physiological measurements collected after exercise across multiple wrist and finger positions.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="right-image">
+            <div class="right-image">
+            <img src="assets/images/smartphone/ppg_data.png" style="padding: 20px 5px; width: 90%; border-radius: 25px;" alt="ppg">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <h3>Credit:</h3>
+        I had the privilege of working on these projects with my labmate and friend, <a href="https://www.linkedin.com/in/jasminrfalconer" target="_blank" style="color:#3fa44c;">Jasmin Falconer</a>.
+  </div>
+</section>
+          <!--
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="assets/images/NNN_ESW.png" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>Student Engineers Working Toward Greener World Through Innovation</h4>
+                  <p>
+                    Northwestern's chapter of Engineers for a Sustainable World is building a greener future through constructing an automated aquaponic system in the Ford Motor Company Engineering Design Center
+                  <div class="white-button">
+                    <a href="https://youtu.be/rCpo_hfJQRk?t=960" target="_blank">See More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>Bill Yen Awarded the IAEP Scholarship</h4>
+                  <p>
+                    Bill Yen (BS ’23) was awarded the 1st place Illinois Association of Environmental Professionals (IAEP) Scholarship for his proposal on sustainability in business practices.
+                  </p>
+                  <div class="white-button">
+                    <a href="https://www.mccormick.northwestern.edu/civil-environmental/news-events/news/articles/2021/bill-yen-makes-the-business-case-for-sustainability.html" target="_blank">See More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="assets/images/iaep_logo.jpg" alt="IAEP Logo" style="width: 50%;">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="assets/images/winning_rotator.png" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>NUHome by engiNUity</h4>
+                  <p>
+                    Northwestern's NUHome was awarded the Residential Grand Winner in the 2021 Solar Decathlon Design Challenge by U.S. Secretary of Energy Jennifer Granholm.
+                  </p>
+                  <div class="white-button">
+                    <a href="https://www.mccormick.northwestern.edu/civil-environmental/news-events/news/articles/2021/solar-decathalon-grand-winner.html" target="_blank">See More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="right-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-text">
+                  <h4>ESW-AutoAquaponics Continues Progress Over Pandemic</h4>
+                  <p>
+                    McCormick Assistant Dean for Student Affairs Ellen Worsdall discussed how student organizations have overcame challenges due to COVID-19 regulations.
+                  </p>
+                  <div class="white-button">
+                    <a href="https://www.mccormick.northwestern.edu/news/articles/2021/04/one-mccormick-lecture-highlights-pandemic-related-adjustment-of-student-activities/" target="_blank">See More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-image">
+                  <img src="assets/images/eswoffice.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="left-image-post">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="left-image">
+                  <img src="assets/images/arborlong.jpg" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="right-text">
+                  <h4>Arbor Air Purifier</h4>
+                  <p>
+                    Three first-year students won the White Space Product Developement Challenge for designing a natural air purifier that uses moss to clean air.
+                  </p>
+                  <div class="white-button">
+                    <a href="https://www.mccormick.northwestern.edu/news/articles/2020/05/trio-of-mccormick-first-year-students-win-design-contest.html" target="_blank">See More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>-->
+
+    <!-- Scripts -->
+    <!--Collapsible-->
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>
