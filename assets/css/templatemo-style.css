@@ -12,6 +12,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+img {
+    height: auto;
+}
+
 #page-wraper {
     background: url(../images/optimized-bg.webp) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -189,11 +193,11 @@ padding: 5px;
 }
 
 .menu .social-network ul li a {
-    width: 10px;
-    height: 5px;
+    width: 44px;
+    height: 44px;
     display: inline-block;
     text-align: center;
-    line-height: 10px;
+    line-height: 44px;
     background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
     font-size: 18px;
@@ -660,7 +664,8 @@ section.my-work .section-heading {
     text-transform: capitalize;
     display: inline-block;
     margin-right: 15px;
-    padding-bottom: 3px;
+    padding: 12px 2px;
+    line-height: 20px;
     font-size: 15px;
     font-weight: 700;
     border-bottom: 2px solid transparent;
